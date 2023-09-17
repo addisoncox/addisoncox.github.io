@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles.css"/>
+    <title>Addison Cox</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts">Posts</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <div class="container">
+            <h1>Post 1 - Example Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et ante a massa luctus
+                tristique vel ut erat. Curabitur eleifend justo nec ligula lacinia feugiat.
+            </p>
+
+            <h2>Example Code</h2>
+            <pre class="go" >	handler <span style="color: #339933;">:=</span> <span style="color: #993333;">func</span><span style="color: #339933;">(</span>msg <span style="color: #339933;">[]</span><span style="color: #993333;">byte</span><span style="color: #339933;">)</span> <span style="color: #339933;">[]</span><span style="color: #993333;">byte</span> <span style="color: #339933;">{</span>
+                <span style="color: #b1b100; font-weight: bold;">return</span> msg
+            <span style="color: #339933;">}</span>
+            config <span style="color: #339933;">:=</span> websocketree<span style="color: #339933;">.</span>WebSocketServerConfig<span style="color: #339933;">{</span>
+                OnMessageHandler<span style="color: #339933;">:</span> handler<span style="color: #339933;">,</span>
+            <span style="color: #339933;">}</span>
+            wsEchoServer <span style="color: #339933;">:=</span> websocketree<span style="color: #339933;">.</span>NewWebSocketServer<span style="color: #339933;">(</span><span style="color: #cc66cc;">&quot;127.0.0.1:9000&quot;</span><span style="color: #339933;">)</span>
+            wsEchoServer<span style="color: #339933;">.</span><span style="">Config</span><span style="color: #339933;">(</span>config<span style="color: #339933;">)</span>
+            wsEchoServer<span style="color: #339933;">.</span><span style="">Run</span><span style="color: #339933;">()</span></pre>
+            
+            <p>
+                Duis vestibulum felis at erat dictum, non dapibus neque vehicula. Sed tincidunt libero eu erat
+                condimentum, a venenatis metus laoreet. Integer ac viverra justo. Sed ullamcorper, dui nec
+                convallis feugiat, odio erat lacinia neque, non tincidunt purus felis eu tortor.
+            </p>
+        </div>
+    </section>
+    
+</body>

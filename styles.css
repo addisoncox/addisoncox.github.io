@@ -1,0 +1,167 @@
+body {
+    color: #333;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0 1em;
+    margin-top: 30px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.25em 0 0.5em 0;
+    line-height: 1.2;
+  }
+  a:link {
+    color: #00e;
+  }
+  a:focus, a:hover {
+    color: #03f;
+  }
+  a:active {
+    color: #e00;
+  }
+  h1 a:empty:before, h2 a:empty:before, h3 a:empty:before,
+  h4 a:empty:before, h5 a:empty:before, h6 a:empty:before {
+    content: "#";
+  }
+  h1 a:empty, h2 a:empty, h3 a:empty, h4 a:empty, h5 a:empty, h6 a:empty {
+    visibility: hidden;
+    padding-left: 0.25em;
+  }
+  h1:hover a:empty, h2:hover a:empty, h3:hover a:empty,
+  h4:hover a:empty, h5:hover a:empty, h6:hover a:empty {
+    visibility: visible;
+  }
+  img {
+    max-width: 100%;
+  }
+  figure {
+    margin: 1em 0;
+    text-align: center;
+  }
+  figcaption {
+    font-size: small;
+  }
+  pre, code, samp, kbd {
+    padding: 10px;
+    font-size: small;
+  }
+  samp {
+    color: #730;
+  }
+  blockquote {
+    background: #eee;
+    padding: 0.5em;
+  }
+  pre {
+    background: rgb(251, 248, 246);
+    overflow: auto;
+  }
+  blockquote {
+    border-left: medium solid #ccc;
+    margin: 1em 0;
+  }
+  blockquote :first-child {
+    margin-top: 0;
+  }
+  blockquote :last-child {
+    margin-bottom: 0;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: thin solid #999;
+    padding: 0.3em 0.4em;
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the list items (links) horizontally */
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between links */
+}
+
+/* Style the links */
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: #007BFF; /* Change to your desired hover color */
+}
+nav ul li a:visited {
+    color: #00e;
+}
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the post links */
+.post-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size as needed */
+    display: block; /* Make each link a block element for spacing */
+    margin-bottom: 10px; /* Add spacing between post links */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.post-list li a:hover {
+    color: #3690ef; /* Change to your desired hover color */
+}
+.post-list li a:visited {
+    color: #518;
+}
+.icon {
+    display: inline-block; /* Display the icon inline with text */
+    vertical-align: middle; /* Align the icon vertically in the middle of the text */
+    margin-right: 5px; /* Add a small space to the right of the icon (adjust as needed) */
+    width: 20px; /* Set the width of the icon (adjust as needed) */
+    height: 20px; /* Set the height of the icon (adjust as needed) */
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the contact list items */
+.contact-list li {
+    margin-bottom: 10px; /* Add spacing between contact list items */
+}
+
+/* Style the icon within the contact list item */
+.contact-list li .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; /* Adjust the spacing between the icon and text */
+    width: 20px; /* Adjust the icon size as needed */
+    height: 20px; /* Adjust the icon size as needed */
+}
+.contact-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size as needed */
+    display: block; /* Make each link a block element for spacing */
+    margin-bottom: 10px; /* Add spacing between post links */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.contact-list li a:hover {
+    color: #3690ef; /* Change to your desired hover color */
+}
