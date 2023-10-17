@@ -27,4 +27,13 @@ jobs:
         pip install pygments
 
     - name: Run scripts
-      run: python scripts/convert_markdown_posts.py
+      run: cd scripts && python convert_markdown_posts.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        git add .
+        git commit -m "Update HTML and posts list"
+        git push

@@ -69,7 +69,7 @@ def convert_markdown_to_html(input_file, output_file):
     html_content = markdown.markdown(markdown_content)
 
     with open(output_file, 'w', encoding='utf-8') as html_file:
-        html_file.write(html_content)
+        html_file.write( pre_html + html_content + post_html)
 
 def generate_post_list_html(post_list):
     post_list_html = '<ul class="post-list">\n'
