@@ -3,7 +3,7 @@ body {
     font-family: helvetica, arial, sans-serif;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 40em;
+    max-width: 60em;
     padding: 0 1em;
     margin-top: 30px;
   }
@@ -54,14 +54,12 @@ body {
     background: #eee;
     padding: 0.5em;
   }
-  pre {
-    background: rgb(251, 248, 246);
-    overflow: auto;
-  }
+
   blockquote {
     border-left: medium solid #ccc;
     margin: 1em 0;
   }
+  
   blockquote :first-child {
     margin-top: 0;
   }
@@ -165,3 +163,34 @@ nav ul li a:visited {
 .contact-list li a:hover {
     color: #3690ef; /* Change to your desired hover color */
 }
+
+
+.highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 0 2px;
+  padding: 2px;
+  overflow: auto;
+}
+
+.kd {
+  color: #3387cc; 
+}
+
+.nx {
+  color: #6f42c1; 
+}
+
+.s {
+  color: #d73a49; 
+}
+
+.p {
+  color: #005cc5; 
+}
+
+.cm {
+  color: #6a737d;
+}
+
