@@ -37,5 +37,5 @@ jobs:
         git add .
         git commit -m "Update HTML and posts list"
         
-        git remote add origin_with_token "https://$GITHUB_ACTOR:$BLOG_TOKEN@github.com/$GITHUB_REPOSITORY"
+        git remote add origin_with_token "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY"
         git push --set-upstream origin_with_token main
